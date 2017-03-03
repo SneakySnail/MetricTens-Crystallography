@@ -1,16 +1,11 @@
 function varargout = MetricTensGUI_Dev(varargin)
-% MetricTens (Version: 1.0)-Created by Giovanni Esteves
+% MetricTens (Version: 1.1)-Created by Giovanni Esteves
 % Department of Materials Science and Engineering
 % North Carolina State University, Nov. 29th, 2015
-% Email: gesteve@ncsu.edu
+% Email: gesteves21@ncsu.edu
 
 % Anytime this GUI is updated the version info at the very bottom that
 % correlates to the about section, should also be upated.
-
-%For those interested in further adding features to the GUI, you can
-% send me the version of both .fig and .m files with the implemented features along with your name
-% and I will integrate the file and add your name to the .m file and
-% highlight the contributions made.
 
 % METRICTENSGUI_DEV MATLAB code for MetricTensGUI_Dev.fig
 %      METRICTENSGUI_DEV, by itself, creates a new METRICTENSGUI_DEV or raises the existing
@@ -330,7 +325,7 @@ function Wulff(hObject, handles, Ang)
 % Created by Giovanni Esteves, Department of Materials Science and Engineering, North Carolina State University, 11-30-2015
 % This section of code was inspired by the Wulff.m script created by Gerald Middleton 
 % Creates Outer Circle that corresponds to 90°
-Lthick=1.5;
+Lthick=1.0;
 if nargin==0
     handles.Ang=0;
 else
@@ -1273,7 +1268,7 @@ function About_Callback(hObject, eventdata, handles)
 % hObject    handle to About (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-h=msgbox({'MetricTens, version: 1.0' 'Created by Giovanni Esteves' 'North Carolina State University (2015)' '' 'Contact Information' 'Giovanni Esteves' 'Email: gesteves21@gmail.com' 'Jacob Jones' 'Email: jacobjones@ncsu.edu'},'About');
+h=msgbox({'MetricTens, version: 1.1' 'Created by Giovanni Esteves' 'North Carolina State University (2015)' '' 'Contact Information' 'Giovanni Esteves' 'Email: gesteves21@gmail.com' 'Jacob Jones' 'Email: jacobjones@ncsu.edu'},'About');
 set(h, 'Position',[500 440 230 180])
 ah=get(h,'CurrentAxes');
 c=get(ah,'Children');
